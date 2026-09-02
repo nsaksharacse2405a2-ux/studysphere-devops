@@ -62,11 +62,9 @@ function displayTasks() {
 
             <div class="task-left">
 
-                <input
-                    type="checkbox"
-                    ${task.completed ? "checked" : ""}
-                    onchange="toggleTask(${index})"
-                >
+                <span class="checkbox" onclick="toggleTask(${index})">
+                    ${task.completed ? "☑" : "☐"}
+                </span>
 
                 <span>${task.text}</span>
 

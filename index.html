@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudySphere | Student Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span>✦</span> StudySphere
+        </div>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#tasks">Tasks</a>
+            <a href="#timer">Focus</a>
+            <a href="#notes">Notes</a>
+        </nav>
+
+        <button id="themeBtn" class="theme-btn" aria-label="Toggle color theme" title="Toggle color theme">
+            🌙
+        </button>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+
+        <section class="hero" id="dashboard">
+
+            <div class="hero-text">
+
+                <p class="small-title">YOUR PERSONAL STUDY SPACE</p>
+
+                <h1>
+                    Study smarter.<br>
+                    <span>Achieve more.</span>
+                </h1>
+
+                <p>
+                    Organize your academic life, track your progress
+                    and stay focused in one beautiful dashboard.
+                </p>
+
+                <a href="#tasks" class="primary-btn">
+                    Start Studying →
+                </a>
+
+            </div>
+
+            <div class="hero-card">
+
+                <div class="circle">
+                    <span id="progressPercent">72%</span>
+                </div>
+
+                <h3>Weekly Progress</h3>
+
+                <p>You're doing great this week!</p>
+
+            </div>
+
+        </section>
+
+
+        <!-- STATISTICS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span>📚</span>
+                <div>
+                    <h2>6</h2>
+                    <p>Subjects</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>✅</span>
+                <div>
+                    <h2 id="completedCount">0</h2>
+                    <p>Tasks Completed</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>🔥</span>
+                <div>
+                    <h2>7</h2>
+                    <p>Day Streak</p>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span>⏱️</span>
+                <div>
+                    <h2 id="focusMinutes">0</h2>
+                    <p>Focus Minutes</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- TASK SECTION -->
+
+        <section class="content-section" id="tasks">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="small-title">PRODUCTIVITY</p>
+                    <h2>Today's Tasks</h2>
+                </div>
+
+                <button id="addTaskBtn" class="primary-btn">
+                    + Add Task
+                </button>
+
+            </div>
+
+
+            <div class="task-container">
+
+                <div class="task-input">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="What do you need to study?"
+                    >
+
+                    <button id="saveTaskBtn">
+                        Add
+                    </button>
+
+                </div>
+
+                <div id="taskList"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TIMER -->
+
+        <section class="timer-section" id="timer">
+
+            <div>
+
+                <p class="small-title">FOCUS MODE</p>
+
+                <h2>Pomodoro Timer</h2>
+
+                <p>
+                    Focus for 25 minutes. Take a short break.
+                    Repeat. Conquer.
+                </p>
+
+            </div>
+
+            <div class="timer">
+
+                <div id="timerDisplay">
+                    25:00
+                </div>
+
+                <div class="timer-buttons">
+
+                    <button id="startTimer">
+                        Start
+                    </button>
+
+                    <button id="resetTimer">
+                        Reset
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- NOTES -->
+
+        <section class="content-section" id="notes">
+
+            <div class="section-heading">
+
+                <div>
+                    <p class="small-title">QUICK NOTES</p>
+                    <h2>Study Notes</h2>
+                </div>
+
+            </div>
+
+            <textarea
+                id="notesArea"
+                placeholder="Write your important notes here..."
+            ></textarea>
+
+            <button id="saveNotes" class="primary-btn">
+                Save Notes
+            </button>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+
+        <h3>StudySphere</h3>
+
+        <p>
+            Built with HTML • CSS • JavaScript
+        </p>
+
+        <p>
+            DevOps Lab Project • 2026
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

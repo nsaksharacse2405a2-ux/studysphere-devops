@@ -559,6 +559,15 @@ body {
     line-height: 1.5;
 }
 
+.student-greeting {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 6% 0;
+    color: var(--muted);
+    font-size: 14px;
+    font-weight: 600;
+}
+
 h1, h2, h3, .logo, #timerDisplay {
     font-family: "Space Grotesk", sans-serif;
 }
@@ -681,6 +690,7 @@ footer h3 { color: var(--yellow); }
 footer p { color: #a8b5bd; }
 
 body.dark { background: #151a1f; color: #f6f2e9; }
+body.dark .student-greeting { color: #aeb9bf; }
 body.dark .navbar { background: rgba(25, 31, 37, .94); border-color: #303941; }
 body.dark .hero { background: radial-gradient(circle at 84% 42%, rgba(244, 202, 105, .12), transparent 23%), #151a1f; }
 body.dark .hero-card, body.dark .stat-card, body.dark .task-container, body.dark textarea { background: #20272e; border-color: #354049; }
@@ -700,6 +710,7 @@ body.dark .task, body.dark .task-input { border-color: #354049; }
 }
 
 @media (max-width: 500px) {
+    .student-greeting { padding-top: 22px; }
     .hero h1 { letter-spacing: -2px; }
     .section-heading { align-items: flex-start; gap: 20px; }
     .section-heading h2, .timer-section h2 { font-size: 29px; }

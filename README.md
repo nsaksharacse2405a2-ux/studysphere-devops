@@ -21,8 +21,30 @@ StudySphere is a web-based student productivity dashboard for organizing academi
 
 ## Team Members
 
-- M1: Review and approve pull requests
-- M4: DevOps integration, UI improvements, CI, and documentation
+-Member 1 — Dashboard & Frontend Development
+Designed and developed the main StudySphere dashboard interface.
+Implemented the student greeting, statistics cards, study progress indicators, and dashboard layout.
+Worked on the overall frontend structure and user experience.
+Created and managed the feature/dashboard branch.
+Participated in Pull Request review and code quality checks for other team members.
+-Member 2 — Task Management & JavaScript Development
+Developed the Task Management module for creating, completing, deleting, and tracking study tasks.
+Implemented task persistence using Local Storage.
+Added dynamic task counters and interactive task functionality.
+Created and managed the feature/tasks branch.
+Participated in Pull Request review, testing, and validation of team contributions.
+-Member 3 — Focus Timer & Study Notes
+Developed the Pomodoro Focus Timer with start, reset, and countdown functionality.
+Designed and implemented the Study Notes module.
+Added Local Storage support to preserve notes between sessions.
+Created and managed the feature/focus-notes branch.
+Participated in Pull Request reviews and functional testing.
+-Member 4 — UI Enhancement & DevOps
+Implemented Dark Mode and improved the responsive design for desktop, tablet, and mobile devices.
+Configured the project's Jenkins CI pipeline for automated build and testing workflows.
+Maintained and improved project documentation through README.md.
+Created and managed the feature/devops-ui branch.
+Participated in Pull Request reviews, integration testing, and final quality checks.
 
 ## Git Branching Strategy
 

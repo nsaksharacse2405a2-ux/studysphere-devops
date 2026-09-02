@@ -4,26 +4,31 @@
 
 const themeBtn = document.getElementById("themeBtn");
 
+function updateThemeButton(isDark) {
+
+    themeBtn.querySelector("span").textContent = isDark ? "☀️" : "🌙";
+    themeBtn.querySelector(".theme-label").textContent = isDark ? "Light Mode" : "Dark Mode";
+    themeBtn.setAttribute("aria-label", isDark ? "Enable light mode" : "Enable dark mode");
+    themeBtn.setAttribute("title", isDark ? "Enable light mode" : "Enable dark mode");
+
+}
+
 themeBtn.addEventListener("click", () => {
 
     document.body.classList.toggle("dark");
 
-    if (document.body.classList.contains("dark")) {
-        themeBtn.textContent = "☀️";
-        localStorage.setItem("theme", "dark");
-    } else {
-        themeBtn.textContent = "🌙";
-        localStorage.setItem("theme", "light");
-    }
+    const isDark = document.body.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+    updateThemeButton(isDark);
 
 });
 
 if (localStorage.getItem("theme") === "dark") {
 
     document.body.classList.add("dark");
-
-    themeBtn.textContent = "☀️";
 }
+
+updateThemeButton(document.body.classList.contains("dark"));
 
 
 // ==============================

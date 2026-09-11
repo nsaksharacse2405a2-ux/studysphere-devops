@@ -40,9 +40,6 @@ body {
     font-weight: bold;
 }
 
-.logo span {
-    font-size: 28px;
-}
 
 nav {
     display: flex;
